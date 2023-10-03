@@ -47,22 +47,23 @@
     const image = document.getElementById("anim_img");
 
     var SIZE = 60;
+    var SPEED = 10;
 
     const offset = $("#anim_img_box").offset(); // 画像を入れるdiv要素
     $(window).scroll(function() {
         const y = $(window).scrollTop();
         const dy = y - offset.top;
-        if(offset.top<y&&y<offset.top+SIZE*5){
+        if(offset.top<y&&y<offset.top+SIZE*SPEED){
             $("#anim_img_box").css("top",0)
-            const i = Math.floor(dy / 10);
+            const i = Math.floor(dy / SPEED);
             if(i<=0||i>=SIZE) return;
             if(tmp[i].src) image.src = tmp[i].src;
-        }else if(y>=offset.top+SIZE*10){
-            $("#anim_img_box").css("top","-"+(dy-SIZE*5))
+        }else if(y>=offset.top+SIZE*SPEED){
+            $("#anim_img_box").css("top","-"+(dy-SIZE*SPEED))
         }
     }); 
 
-    $("#anim_img_padding").height(SIZE*5); // スペースの変更
+    $("#anim_img_padding").height(SIZE*SPEED); // スペースの変更
     
     </script>
 </html>
