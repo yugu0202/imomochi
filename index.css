@@ -97,6 +97,19 @@ nav {
 }
 
 /* 画像表示用ボックス関連 */
+#title_img_box{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#title_img {
+	width: 100%;
+}
+
 #anim01_img_box{
     position: sticky;
     width: 100%;
