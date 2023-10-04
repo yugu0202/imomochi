@@ -42,16 +42,18 @@ li {
 
 /* ボタンの装飾 */
 .blue_button {
+	text-decoration: none;
 	display: block;
 	gap: 8px;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	font-family: sans-serif;
 	font-size 16px;
 	color: #fff;
 	text-align: center;
 	overflow-wrap: anywhere;
-	background-color: #6fa24a;
+	background-color: #0000ff;
 	border-radius: 32px;
 }
 
