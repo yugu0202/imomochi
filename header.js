@@ -16,6 +16,7 @@ function ScrollAnime() {
 		//ヘッダーが上から出現する
 		$('#hover-header').removeClass('UpMove');	//#headerにUpMoveというクラス名を除き
 		$('#hover-header').addClass('DownMove');//#headerにDownMoveのクラス名を追加
+		$("#hover-header").css("display", "flex");
 	}
 
 	beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
