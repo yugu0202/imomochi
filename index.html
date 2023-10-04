@@ -1,4 +1,4 @@
-<html>
+<html lang="ja">
 
 	<head>
 		<meta charset="utf-8" />
@@ -13,8 +13,7 @@
 	</head>
 
 	<body>
-		<div class="header-box"></div>
-		<header>
+		<header id="hover-header">
 			<img id="logo" src="img/icon.png" />
 			<nav class="menu">
 				<ul>
@@ -30,16 +29,19 @@
 				<p style="color:white;">IMOMOCHI</p>
 			</div>
 
-			<div id="anim_img_box">
-				<img id="anim_img" src="img/anim01/1.webp" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
+			<div id="anim01_img_box" class="hover-area">
+				<img id="anim01_img" src="img/anim01/1.webp" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
 			</div>
 
-			<div id="anim_img_padding" class="padding"></div>
+			<div id="anim01_img_padding" class="padding"></div>
+
 			<div class="padding">
 				<p style="color:white">Let's start.</p>
 			</div>
 		</div>
 
 	</body>
+
 	<script src="anim.js"></script>
+	<script src="header.js"></script>
 </html>
