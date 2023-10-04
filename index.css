@@ -3,6 +3,49 @@ body{
     margin: 0;
 }
 
+.header-box {
+	height: 60px;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	background: rgba(0, 0, 0, .1);
+	z-index: 100;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	width: 20px;
+	height: 20px;
+}
+
+nav {
+	width: 30vw;
+}
+
+ul {
+	width: 100vw;
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	width: 33vw;
+}
+
+a {
+	display: block;
+	width: 100vw;
+	line-height: 60px;
+	text-align: center;
+}
+
 .content{
     width: 100vw;
 }
