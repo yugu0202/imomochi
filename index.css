@@ -3,6 +3,7 @@ body{
     margin: 0;
 }
 
+/* ヘッダー関連 */
 .header-box {
 	height: 60px;
 }
@@ -39,11 +40,19 @@ li {
 	width: 33vw;
 }
 
-a {
+/* ボタンの装飾 */
+.blue_button {
 	display: block;
+	gap: 8px;
+	align-items: center;
+	justify-content: center;
 	width: 100vw;
-	line-height: 60px;
+	font-size 16px;
+	color: #fff;
 	text-align: center;
+	overflow-wrap: anywhere;
+	background-color: #6fa24a;
+	border-radius: 32px;
 }
 
 .content{
