@@ -15,7 +15,7 @@ function loadImageToTmp(){
 const image = document.getElementById("anim_img");
 
 var SIZE = 60;
-var SPEED = 50;
+var SPEED = 30;
 
 const offset = $("#anim_img_box").offset(); // 画像を入れるdiv要素
 $("#anim_img_padding").height(SIZE*SPEED); // スペースの変更
