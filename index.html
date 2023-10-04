@@ -16,7 +16,7 @@
     </div>
 
     <div id="anim_img_box">
-        <img id="anim_img" src="img/anim01_1.png" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
+        <img id="anim_img" src="img/anim01/1.png" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
     </div>
 
     <div id="anim_img_padding" class="padding">
@@ -37,7 +37,7 @@
             const _i = i;
             const img = new Image();
             tmp[_i] = null;
-            img.src = "img/anim01_"+_i+".png";
+            img.src = "img/anim01/"+_i+".png";
             img.addEventListener("load",()=>{
                 tmp[_i] = img;
             })
