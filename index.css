@@ -4,21 +4,21 @@ body{
 }
 
 .content{
-    width: 100%;
+    width: 100vw;
 }
 
 .content .padding{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
 
 #anim_img_box{
     position: sticky;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top:0;
     display: flex;
@@ -28,5 +28,6 @@ body{
 }
 
 #anim_img{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
