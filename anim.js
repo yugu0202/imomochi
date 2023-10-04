@@ -5,7 +5,7 @@ function loadImageToTmp(){
 		const _i = i;
 		const img = new Image();
 		tmp[_i] = null;
-		img.src = "img/anim01/"+_i+".png";
+		img.src = "img/anim01_black/"+_i+".png";
 		img.addEventListener("load",()=>{
 			tmp[_i] = img;
 		})
