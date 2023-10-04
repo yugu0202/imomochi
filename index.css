@@ -125,9 +125,17 @@ li {
 }
 
 /* スマホ用 */
-@media screen and (max-width:520px) {
+@media only screen and (max-width:520px) {
 	#name {
-		font-size: 32px;
+		font-size: 20px;
+		margin-top: 5px;
+		margin-left: 15vw;
+	}
+
+	.blue_button {
+		font-size: 14px;
+		width: 100%;
+		margin-top: 5px;
 	}
 }
 
