@@ -9,10 +9,15 @@ body{
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: rgba(0, 0, 0, .1);
+	background: rgba(245, 245, 247, .2);
 	z-index: 100;
 	display: none; /* header.jsでflexに変更される */
 	justify-content: space-between;
+	backdrop-filter: blur(12px);
+	height: 5vh;
+	border-width: 1px;
+	border-color: rgb(245, 245, 247, .5);
+	border-bottom-style: solid;
 }
 
 #name {

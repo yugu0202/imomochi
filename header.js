@@ -8,7 +8,7 @@ function ScrollAnime() {
 	//ヘッダーの出し入れをする
 	if(scroll == beforePos) {
 		//IE11対策で処理を入れない
-	}else if(elemTop > scroll || 0 > scroll - beforePos){
+	}else if(elemTop > scroll){
 		//ヘッダーが上に消える
 		$('#hover-header').removeClass('DownMove');//#headerにDownMoveというクラス名を除き
 		$('#hover-header').addClass('UpMove');//#headerにUpMoveのクラス名を追加
