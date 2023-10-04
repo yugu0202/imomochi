@@ -1,69 +1,33 @@
 <html>
 
-<head>
-    <link rel="stylesheet" href="./index.css">
-    <script
-        src="https://code.jquery.com/jquery-3.5.0.min.js"
-        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-        crossorigin="anonymous">
-    </script>
-</head>
+	<head>
+		<link rel="stylesheet" href="./index.css">
+		<script
+			src="https://code.jquery.com/jquery-3.5.0.min.js"
+			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			crossorigin="anonymous">
+		</script>
+	</head>
 
-<body>
-<div class="content">
-    <div class="padding">
-        <p style="color:white;">IMOMOCHI</p>
-    </div>
+	<body>
+		<div class="content">
+			<div class="padding">
+				<p style="color:white;">IMOMOCHI</p>
+			</div>
 
-    <div id="anim_img_box">
-        <img id="anim_img" src="img/anim01/1.png" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
-    </div>
+			<div id="anim_img_box">
+				<img id="anim_img" src="img/anim01/1.png" style="width: 100%;"/> <!--初期画像。置き換わる部分-->
+			</div>
 
-    <div id="anim_img_padding" class="padding">
-        このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
-        このサイズはJavaScriptで変わります。
-    </div>
-    <div class="padding">
-        <p style="color:white">Let's start.</p>
-    </div>
-</div>
+			<div id="anim_img_padding" class="padding">
+				このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+				このサイズはJavaScriptで変わります。
+			</div>
+			<div class="padding">
+				<p style="color:white">Let's start.</p>
+			</div>
+		</div>
 
-</body>
-<script>   
-    var tmp = {};
-    loadImageToTmp();
-    function loadImageToTmp(){
-        for(var i=1;i<=60;i++){
-            const _i = i;
-            const img = new Image();
-            tmp[_i] = null;
-            img.src = "img/anim01/"+_i+".png";
-            img.addEventListener("load",()=>{
-                tmp[_i] = img;
-            })
-        }
-    }
-
-    const image = document.getElementById("anim_img");
-
-    var SIZE = 60;
-    var SPEED = 10;
-
-    const offset = $("#anim_img_box").offset(); // 画像を入れるdiv要素
-    $(window).scroll(function() {
-        const y = $(window).scrollTop();
-        const dy = y - offset.top;
-        if(offset.top<y&&y<offset.top+SIZE*SPEED){
-            $("#anim_img_box").css("top",0)
-            const i = Math.floor(dy / SPEED);
-            if(i<=0||i>=SIZE) return;
-            if(tmp[i].src) image.src = tmp[i].src;
-        }else if(y>=offset.top+SIZE*SPEED){
-            $("#anim_img_box").css("top","-"+(dy-SIZE*SPEED))
-        }
-    }); 
-
-    $("#anim_img_padding").height(SIZE*SPEED); // スペースの変更
-    
-    </script>
+	</body>
+	<script src="anim.js"></script>
 </html>
