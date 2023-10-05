@@ -4,6 +4,27 @@ body{
 }
 
 /* ヘッダー関連 */
+#header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #;
+	z-index: 100;
+	display: none; /* header.jsでflexに変更される */
+	justify-content: space-between;
+	backdrop-filter: blur(12px);
+	height: 5vh;
+	border-width: 1px;
+	border-color: rgb(245, 245, 247, .5);
+	border-bottom-style: solid;
+}
+
+#logo {
+	width: 5%;
+	margin-top: 10px;
+	margin-left: 25vw;
+}
+
 #hover-header {
 	position: fixed;
 	top: 0;
