@@ -10,14 +10,17 @@ body{
 	width: 100%;
 	background: #000;
 	z-index: 100;
-	display: flex; /* header.jsでflexに変更される */
+	display: flex;
 	justify-content: space-between;
-	height: 3vh;
+	height: 3svh;
+	border-width: 1px;
+	border-color: rgb(245, 245, 247, .5);
+	border-bottom-style: solid;
 }
 
 #logo {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	margin-top: 10px;
 	margin-left: 25vw;
 }
@@ -32,7 +35,7 @@ body{
 	display: none; /* header.jsでflexに変更される */
 	justify-content: space-between;
 	backdrop-filter: blur(12px);
-	height: 5vh;
+	height: 5svh;
 	border-width: 1px;
 	border-color: rgb(245, 245, 247, .5);
 	border-bottom-style: solid;
