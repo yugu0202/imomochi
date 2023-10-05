@@ -12,7 +12,7 @@ body{
 	z-index: 100;
 	display: flex;
 	justify-content: space-between;
-	height: 5svh;
+	height: 20svh;
 	border-width: 1px;
 	border-color: rgb(245, 245, 247, .5);
 	border-bottom-style: solid;
@@ -147,6 +147,10 @@ nav {
 
 /* スマホ用 */
 @media only screen and (max-width:520px) {
+	#header {
+		height: 5svh;
+	}
+
 	#name {
 		font-size: 20px;
 		margin-top: 5px;
