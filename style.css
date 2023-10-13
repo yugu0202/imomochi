@@ -116,6 +116,10 @@ nav {
     height: 100svh;
 }
 
+.hide-area{
+	display: none;
+}
+
 /* 画像表示用ボックス関連 */
 #title_img_box{
     width: 100%;
