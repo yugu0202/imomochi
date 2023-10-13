@@ -16,7 +16,6 @@ function ScrollAnime() {
 		//ヘッダーが上から出現する
 		$('#hover-header').removeClass('UpMove');	//#headerにUpMoveというクラス名を除き
 		$('#hover-header').addClass('DownMove');//#headerにDownMoveのクラス名を追加
-		$("#hover-header").css("display", "flex");
 	}
 
 	beforePos = scroll;//現在のスクロール値を比較用のbeforePosに格納
@@ -25,10 +24,5 @@ function ScrollAnime() {
 
 // 画面をスクロールをしたら動かしたい場合の記述
 $(window).scroll(function () {
-	ScrollAnime();//スクロール途中でヘッダーが消え、上にスクロールすると復活する関数を呼ぶ
-});
-
-// ページが読み込まれたらすぐに動かしたい場合の記述
-$(window).on('load', function () {
 	ScrollAnime();//スクロール途中でヘッダーが消え、上にスクロールすると復活する関数を呼ぶ
 });

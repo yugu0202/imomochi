@@ -25,12 +25,12 @@ body{
 
 #hover-header {
 	position: fixed;
-	top: 0;
+	top: -100px;
 	left: 0;
 	width: 100%;
 	background: rgba(245, 245, 247, .2);
 	z-index: 100;
-	display: none; /* header.jsでflexに変更される */
+	display: flex;
 	justify-content: space-between;
 	backdrop-filter: blur(12px);
 	height: 5svh;
