@@ -25,7 +25,7 @@ body{
 
 #hover-header {
 	position: fixed;
-	top: -100px;
+	top: 0;
 	left: 0;
 	width: 100%;
 	background: rgba(245, 245, 247, .2);
@@ -37,6 +37,7 @@ body{
 	border-width: 1px;
 	border-color: rgb(245, 245, 247, .5);
 	border-bottom-style: solid;
+    transform: translateY(-100px);
 }
 
 #name {
