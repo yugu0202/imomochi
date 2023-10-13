@@ -87,7 +87,7 @@ nav {
 }
 
 /* ボタンの装飾 */
-.blue_button {
+#blue_button {
 	text-decoration: none;
 	display: block;
 	gap: 8px;
@@ -156,7 +156,7 @@ nav {
 		margin-left: 2vw;
 	}
 
-	.blue_button {
+	#blue_button {
 		font-size: 14px;
 		width: 50%;
 		margin-top: 6px;

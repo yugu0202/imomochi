@@ -12,6 +12,7 @@
 			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
 			crossorigin="anonymous">
 		</script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css">
 	</head>
 
 	<body>
@@ -22,11 +23,16 @@
 		<header id="hover-header">
 			<span id="name">IMOMOCHI</span>
 			<nav class="menu">
-				<a href="#" class="blue_button">
+				<a href="#buy" class="blue_button">
 					<span class="blue_button_text">購入</span>
 				</a>
 			</nav>
 		</header>
+		
+		<section id="info-1" class="hide-area"><!--表示エリアのHTML。id名にリンク先と同じ名前を指定。非表示にするためhide-areaというクラス名も指定。-->
+			<h2>購入</h2>
+			<p> おしらせの内容が入ります。</p>
+		</section>
 	
 		<div class="content">
 			<div id="title_img_box">
@@ -50,4 +56,6 @@
 
 	<script src="anim.js"></script>
 	<script src="header.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
+    <script src="modal.js"></script>
 </html>
