@@ -8,7 +8,7 @@ $(".buy").modaal({
 			},
 		});
 		const parse = await data.json();
-		$('#buy').innerText = parse.value;
+		$('.buy_text').innerText = parse.value;
 		$('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
 	},
 	after_close:function(){// モーダルが閉じた後に行う動作
