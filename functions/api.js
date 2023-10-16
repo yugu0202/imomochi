@@ -1,3 +1,3 @@
 export function onRequest(context){
-    return new Response("hello")
+    return new Response(JSON.stringify({ value: "hello" }))
 }
