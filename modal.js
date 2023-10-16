@@ -8,7 +8,6 @@ $(".buy").modaal({
 			},
 		});
 		const parse = await data.json();
-		console.log($(".buy_text").text());
 		$('.buy_text').text(parse.value);
 		$('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
 	},
