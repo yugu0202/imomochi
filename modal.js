@@ -1,7 +1,14 @@
 $(".buy").modaal({
 	overlay_close:true,//モーダル背景クリック時に閉じるか
 	before_open: async function(){// モーダルが開く前に行う動作
-		console.log(await fetch("/api"))
+		const data = await fetch("/api", {
+			method: "GET",
+			headers: {
+				"Content-Type": "application/json"
+			},
+		});
+		const parse = await data.json();
+		console.log(parse.value);
 		$('html').css('overflow-y','hidden');/*縦スクロールバーを出さない*/
 	},
 	after_close:function(){// モーダルが閉じた後に行う動作
