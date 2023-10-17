@@ -28,5 +28,5 @@ export const onRequestPost = async({request, env}) => {
     
     //await env.IMOMOCHISTATUS.put("status", data.value);
     const toString = Object.prototype.toString;
-    return new Response(toString.call(request.body)) //.split(/(?<=^[^=]+?)=/));
+    return new Response(toString.call(request.body.status)) //.split(/(?<=^[^=]+?)=/));
 }
