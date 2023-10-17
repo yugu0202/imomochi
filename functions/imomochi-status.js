@@ -27,5 +27,10 @@ export const onRequestPost = async({request, env}) => {
     const json = JSON.parse('{"' + text.replace(/&/g, '","').replace(/=/g, '":"') + '"}', function (key, value) { return key === "" ? value : decodeURIComponent(value) });
     
     await env.IMOMOCHISTATUS.put("status", json.status);
-    return new request.redirect(301, request.url);
+    return new Response(null, {
+        "status": 301,
+        "headers": {
+            "method": "GET",
+            "Location": request.url(),
+        });
 }
