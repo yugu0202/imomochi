@@ -3,6 +3,6 @@ export async function onRequest(context){
     return new Response(JSON.stringify({ value: res })); 
 }
 
-export function onRequestPost(context){
+export async function onRequestPost(context){
     
 }
