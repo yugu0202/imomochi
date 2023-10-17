@@ -1,7 +1,7 @@
 export const onRequestGet = async({params, env}) => {
     const res = await env.IMOMOCHISTATUS.get("status");
     const html = `
-    <p>$(res)</p>
+    <p>${res}</p>
     `
     return new Response(html); 
 }
