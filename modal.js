@@ -1,7 +1,7 @@
 $(".buy").modaal({
 	overlay_close:true,//モーダル背景クリック時に閉じるか
 	before_open: async function(){// モーダルが開く前に行う動作
-		const data = await fetch("/api", {
+		const data = await fetch("/get-text", {
 			method: "GET",
 			headers: {
 				"Content-Type": "application/json"
