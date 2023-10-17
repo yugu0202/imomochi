@@ -23,8 +23,8 @@ export const onRequestGet = async({params, env}) => {
 }
 
 export const onRequestPost = async({request, env}) => {
-    const body = request.clone().text();
-    const data = JSON.parse(body);
+    //const body = request.clone().text();
+    //const data = JSON.parse(body);
     
     console.log(request);
     console.log(request.body);
