@@ -8,7 +8,12 @@ export const onRequestGet = async({params, env}) => {
             <title>IMOMOCHI status</title>
         </head>
         <body>
-            <p>${res}</p>
+            <h1>IMOMOCHI status</h1>
+            <p>現在の状態: ${res}</p>
+            <form action="" method="post" class="form">
+                <label for="status">status</label>
+                <input type="text" name="status" id="status" required />
+                <input type="submit">
         </body>
     </html> 
     `
@@ -21,5 +26,8 @@ export const onRequestPost = async({request, env}) => {
     const body = request.clone().text();
     const data = JSON.parse(body);
     
-    await env.IMOMOCHISTATUS.put("status", data.value);
+    console.log(request);
+    console.log(request.body);
+    
+    //await env.IMOMOCHISTATUS.put("status", data.value);
 }
