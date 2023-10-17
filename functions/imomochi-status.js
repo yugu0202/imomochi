@@ -31,6 +31,6 @@ export const onRequestPost = async({request, env}) => {
         "status": 301,
         "headers": {
             "method": "GET",
-            "Location": request.url(),
+            "Location": request.url,
         }});
 }
