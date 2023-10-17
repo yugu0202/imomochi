@@ -32,5 +32,5 @@ export const onRequestPost = async({request, env}) => {
         "headers": {
             "method": "GET",
             "Location": request.url(),
-        });
+        }});
 }
