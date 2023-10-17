@@ -30,5 +30,5 @@ export const onRequestPost = async({request, env}) => {
     console.log(request.body);
     
     //await env.IMOMOCHISTATUS.put("status", data.value);
-return new Response(request.body.status);
+return new Response(request.body.get("status"));
 }
