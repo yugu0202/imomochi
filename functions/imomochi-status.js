@@ -4,7 +4,7 @@ export const onRequestGet = async({params, env}) => {
     <p>${res}</p>
     `
     return new Response(html, {
-    headers: {"Content-Type": "texy/html"}
+    headers: {"Content-Type": "text/html"}
     }); 
 }
 
