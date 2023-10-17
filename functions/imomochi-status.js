@@ -3,7 +3,7 @@ export const onRequestGet = async({params, env}) => {
     const html = `
     <p>$(res)</p>
     `
-    return new Response(html)); 
+    return new Response(html); 
 }
 
 export const onRequestPost = async({request, env}) => {
