@@ -28,5 +28,5 @@ export const onRequestPost = async({request, env}) => {
     //const data = JSON.parse(body);
     
     //await env.IMOMOCHISTATUS.put("status", data.value);
-    return new Response(text)//JSON.parse('{"' + request.text().replace(/&/g, '","').replace(/=/g, '":"') + '"}', function (key, value) { return key === "" ? value : decodeURIComponent(value) }));
+    return new Response(JSON.parse('{"' + text.replace(/&/g, '","').replace(/=/g, '":"') + '"}', function (key, value) { return key === "" ? value : decodeURIComponent(value) }));
 }
