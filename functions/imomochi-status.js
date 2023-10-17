@@ -9,8 +9,8 @@ export const onRequestGet = async({params, env}) => {
         </head>
         <body>
             <h1>IMOMOCHI status</h1>
-            <p>現在の状態: ${res}</p>
-            <form action="" method="post" class="form">
+            <p>現在の表示: ${res}</p>
+            <form action="" method="post" enctype= class="form">
                 <label for="status">status</label>
                 <input type="text" name="status" id="status" required />
                 <input type="submit">
@@ -27,5 +27,5 @@ export const onRequestPost = async({request, env}) => {
     //const data = JSON.parse(body);
     
     //await env.IMOMOCHISTATUS.put("status", data.value);
-    return new Response(request.body);
+    return new Response(JSON.parse('{"' + request.body.replace(/&/g, '","').replace(/=/g, '":"') + '"}', function (key, value) { return key === "" ? value : decodeURIComponent(value) }));
 }
