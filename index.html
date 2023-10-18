@@ -6,7 +6,6 @@
 		<title>IMOMOCHI</title>
 		<link rel="icon" href="img/favicon.png" type="image/x-image">
 		<link rel="apple-touch-icon" href="img/favicon.png" sizes="180x180">
-		<link rel="stylesheet" href="./style.css">
 		<script
 			src="https://code.jquery.com/jquery-3.5.0.min.js"
 			integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
@@ -70,6 +69,13 @@
 		}else{
 			$("#title_movie_pc").css("display", "block");
 		}
+
+		var css = document.createElement('link');
+		css.rel = 'stylesheet';
+		css.href = 'style.css';
+		css.type = 'text/css';
+		var head = document.getElementsByTagName('head')[0];
+		head.appendChild(css);
 	</script>
 	<script src="anim01.js"></script>
 	<script src="anim02.js"></script>
