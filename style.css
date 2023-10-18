@@ -130,7 +130,11 @@ nav {
     background-color: black;
 }
 
-#title_movie {
+#title_movie_pc {
+    height: 100%;
+}
+
+#title_movie_sp {
     height: 100%;
 }
 

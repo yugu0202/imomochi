@@ -31,9 +31,13 @@
 	
 		<div class="content">
 			<div id="title_img_box">
-				<video autoplay muted playsinline id="title_movie">
+				<video autoplay muted playsinline style="display: none;" id="title_movie_pc">
 					<source src="img/imomochi_title.webm" type="video/webm" id="webm" />
 					<source src="img/imomochi_title.mp4" type="video/mp4" id="mp4" />
+				</video>
+				<video autoplay muted playsinline style="display: none;" id="title_movie_sp">
+					<source src="img/imomochi_title_smart.webm" type="video/webm" id="webm" />
+					<source src="img/imomochi_title_smart.mp4" type="video/mp4" id="mp4" />
 				</video>
 			</div>
             
@@ -62,11 +66,10 @@
 	<script>const is_mobile = (window.matchMedia && window.matchMedia("(max-width: 520px)").matches)</script>
 	<script>
 		if (is_mobile){
-			$("#webm").attr("src", "img/imomochi_title_smart.webm");
-			$("#mp4").attr("src", "img/imomochi_title_smart.mp4");
-			document.getElementById("title_movie").load();
+			$("#title_movie_sp").css("display", "block");
+		}else{
+			$("#title_movie_pc").css("display", "block");
 		}
-					
 	</script>
 	<script src="anim01.js"></script>
 	<script src="anim02.js"></script>
