@@ -1,6 +1,8 @@
 body{
     background-color: black;
     margin: 0;
+    font-family: "myriad-pro";
+    font-style: normal;
 }
 
 /* ヘッダー関連 */
