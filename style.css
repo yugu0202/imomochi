@@ -131,11 +131,11 @@ nav {
 }
 
 #title_movie_pc {
-    height: 100svh;
+	width: 100%;
 }
 
 #title_movie_sp {
-    height: 100svh;
+	width: 100%;
 }
 
 #anim01_img_box{
