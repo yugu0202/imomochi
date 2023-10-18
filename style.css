@@ -170,7 +170,7 @@ nav {
 }
 
 /* スマホ用 */
-@media only screen and (max-width:520px) {
+@media screen and (max-width:520px) {
 	#header {
 		height: 5svh;
 	}
