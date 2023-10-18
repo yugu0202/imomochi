@@ -1,6 +1,6 @@
 var tmp_02 = {};
 var SIZE_02 = 89;
-var SPEED_02 = 30;
+var SPEED_02 = 50;
 
 tmp_02 = loadImageToTmp(SIZE_02, "anim02");
 
