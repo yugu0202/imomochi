@@ -31,9 +31,9 @@
 	
 		<div class="content">
 			<div id="title_img_box">
-				<video autoplay muted playsinline id="title_webm">
-					<source src="img/imomochi_title.webm" type="video/webm" />
-					<source src="img/imomochi_title.mp4" type="video/mp4" />
+				<video autoplay muted playsinline id="title_movie">
+					<source src="img/imomochi_title.webm" type="video/webm" id="webm" />
+					<source src="img/imomochi_title.mp4" type="video/mp4" id="mp4" />
 				</video>
 			</div>
             
@@ -44,6 +44,12 @@
 			</div>
 
 			<div id="anim01_img_padding" class="padding"></div>
+
+			<div id="anim02_img_box">
+				<img id="anim02_img" src="img/anim02/2.webp" /> <!--初期画像。置き換わる部分-->
+			</div>
+
+			<div id="anim02_img_padding" class="padding"></div>
 		</div>
 		
 		<section id="buy" class="hide-area"><!--モーダル表示エリアのHTML。id名にリンク先と同じ名前を指定。非表示にするためhide-areaというクラス名も指定。-->
@@ -53,7 +59,17 @@
 
 	</body>
 
-	<script src="anim.js"></script>
+	<script>const is_mobile = (window.matchMedia && window.matchMedia("(max-device-width: 640px)").matches)</script>
+	<script>
+		if (is_mobile){
+			$("#webm").attr("src", "img/imomochi_title_smart.webm");
+			$("#mp4").attr("src", "img/imomochi_title_smart.mp4");
+			document.getElementById("title_movie").load();
+		}
+					
+	</script>
+	<script src="anim01.js"></script>
+	<script src="anim02.js"></script>
 	<script src="header.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/js/modaal.min.js"></script>
     <script src="modal.js"></script>
