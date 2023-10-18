@@ -44,7 +44,6 @@ body{
 
 #name {
 	width: 30%;
-	font-family: sans-serif;
 	font-size: 16px;
 	color: #fff;
 	margin-top: 10px;
@@ -96,7 +95,6 @@ nav {
 	align-items: center;
 	justify-content: center;
 	width: 10%;
-	font-family: sans-serif;
 	font-size: 16px;
 	color: #fff;
 	text-align: center;
